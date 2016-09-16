@@ -38,6 +38,7 @@ div.col-lg-4.gallery {
   flex-direction: column;
   overflow: hidden;
   margin: 15px;
+  height: 100%;
 }
 
 div.image-container:hover {
@@ -54,4 +55,22 @@ div.col-lg-4 > div.image-container {
   padding: 0px;
   overflow: hidden;
   margin: 15px;
+}
+
+div.project-rows > div.col-lg-4.gallery {
+  width: calc(33.33333333% - 61px);
+}
+
+img.breakout {
+  height: 100%;
+}
+
+p.proj-links > a {
+  /*font-size: .5em;*/
+}
+
+p.proj-links {
+  font-size: .5em;
+  display: inline-block;
+  margin-left: 10px;
 }
