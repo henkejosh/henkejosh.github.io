@@ -1,0 +1,57 @@
+p.project-description {
+  display: none;
+  color: black;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  padding: 0 18px;
+  /*align-items: center;*/
+  height: 100%;
+  font-size: .8em;
+}
+
+div.image-container:hover img {
+  opacity: 0.2;
+  border-radius: 4px;
+}
+
+div.col-lg-4 img {
+  border-radius: 4px;
+}
+
+div.image-container:hover p.project-description {
+  display: flex;
+}
+
+div.project-rows {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 16em;
+  margin: 10px 0;
+  overflow: hidden;
+}
+
+div.col-lg-4.gallery {
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  margin: 15px;
+}
+
+div.image-container:hover {
+  /*border: 1px solid grey;*/
+  background: steelblue;
+  /*display: flex;*/
+  cursor: pointer;
+}
+
+div.col-lg-4 > div.image-container {
+  /*height: 100%;*/
+  border-radius: 4px;
+  height: 90%;
+  padding: 0px;
+  overflow: hidden;
+  margin: 15px;
+}
