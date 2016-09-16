@@ -1,10 +1,10 @@
 p.project-description {
   display: none;
-  color: black;
+  color: white;
   position: absolute;
   top: 30px;
   left: 0;
-  padding: 0 18px;
+  padding: 0 22px;
   /*align-items: center;*/
   height: 100%;
   font-size: .8em;
@@ -58,7 +58,7 @@ div.col-lg-4 > div.image-container {
 }
 
 div.project-rows > div.col-lg-4.gallery {
-  width: calc(33.33333333% - 61px);
+  width: calc(33.33333333% - 30px);
 }
 
 img.breakout {
@@ -66,11 +66,89 @@ img.breakout {
 }
 
 p.proj-links > a {
-  /*font-size: .5em;*/
+  color: grey;
+  text-decoration: none;
+}
+
+p.proj-links > a:hover {
+  color: #3fb188;
+  text-decoration: none;
 }
 
 p.proj-links {
   font-size: .5em;
   display: inline-block;
   margin-left: 10px;
+}
+
+div.container > div.social-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+p.resume {
+  color: white;
+  /*font-size: 30px;*/
+  display: flex;
+  align-items: center;
+  height: 100%;
+  font-style: normal;
+    font-weight: bold;
+    line-height: 1;
+}
+
+div.col-lg-2 > a {
+  text-decoration: none;
+}
+
+div.foot-col-lg-4 {
+  width: 40%;
+}
+
+div.foot-col-lg-4 > p > a {
+  color: white;
+}
+
+div.foot-col-lg-4 > p.resume {
+  display: inline-block;
+}
+
+div.foot-col-lg-4 > p:hover > a {
+  color: #3fb188;
+}
+
+
+div.foot-col-lg-4 > p:hover > a {
+  color: #3fb188;
+  text-decoration: none;
+}
+
+div.row.centered.footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+div.name-title {
+  width: 100%;
+  margin: 0px;
+}
+
+div.header-icon-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    font-size: 2em;
+    margin: 10px;
+}
+
+div.header-icon-bar > div.header-icon > a {
+  color: white;
+}
+
+div.header-icon-bar > div.header-icon i:hover {
+  color: #3fb188;
 }
