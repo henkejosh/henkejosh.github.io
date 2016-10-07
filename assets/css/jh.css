@@ -27,9 +27,11 @@ div.project-rows {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  height: 16em;
   margin: 10px 0;
-  overflow: hidden;
+
+
+  /*height: 16em;*/
+  /*overflow: hidden;*/
 }
 
 div.col-lg-4.gallery {
@@ -39,6 +41,8 @@ div.col-lg-4.gallery {
   overflow: hidden;
   margin: 15px;
   height: 100%;
+  min-width: 359.984px;
+  /*flex-wrap: wrap;*/
 }
 
 div.image-container:hover {
@@ -50,8 +54,11 @@ div.image-container:hover {
 
 div.col-lg-4 > div.image-container {
   /*height: 100%;*/
+  min-width: 359.984px;
+  max-width: 359.984px;
+  height: 187.594px;
   border-radius: 4px;
-  height: 90%;
+  /*height: 90%;*/
   padding: 0px;
   overflow: hidden;
   margin: 15px;
@@ -63,6 +70,14 @@ div.project-rows > div.col-lg-4.gallery {
 
 img.breakout {
   height: 100%;
+}
+
+div.image-container > .img-responsive {
+  /*height: 100%;*/
+  /*width: auto;*/
+  min-width: 329.984px;
+  max-width: 329.984px;
+  min-height: auto;
 }
 
 p.proj-links > a {
@@ -151,4 +166,27 @@ div.header-icon-bar > div.header-icon > a {
 
 div.header-icon-bar > div.header-icon i:hover {
   color: #3fb188;
+}
+
+div.prof-pic-container {
+  position: absolute;
+  top: 6em;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 90px;
+  left: calc(50% - 12em);
+  right: calc(50% - 12em);
+  height: 12em;
+  overflow: hidden;
+  width: 12em;
+}
+
+img.profile-pic {
+  position: relative;
+  height: auto;
+  width: 100%;
+}
+
+div#headerwrap {
+  padding-top: calc(50px + 18em);
 }
